@@ -1,4 +1,5 @@
 import 'package:bus_rental_keolis/components/app/view.dart';
+import 'package:bus_rental_keolis/components/widget/navigation_bar.dart';
 import 'package:bus_rental_keolis/view/home/home_viewmodel.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -182,7 +183,7 @@ class HomeView extends StatelessWidget {
       padding: EdgeInsets.only(top: 48.0),
       child: Container(
         width: size.width,
-        height: 400,
+        height: 300,
         color: Color(0xFF786E65),
       ),
     );
@@ -211,6 +212,7 @@ class HomeView extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: NavigationBar().bottomNavigationBar(context),
     );
   }
 }
