@@ -62,6 +62,12 @@ flutter:
     - assets/icon/icon_center.png
     - assets/icon/icon_engagement.png
     - assets/icon/icon_who.png
+    - assets/icon/who/
+    - assets/icon/who/icon_text_who.png
+    - assets/icon/who/icon_text_engagement.png
+    - assets/icon/who/icon_text_benefit.png
+    - assets/icon/who/icon_text_cars.png
+    - assets/icon/who/icon_text_center.png
     - assets/img/
     - assets/img/img_header_car.png
     - assets/img/img_bus.png
