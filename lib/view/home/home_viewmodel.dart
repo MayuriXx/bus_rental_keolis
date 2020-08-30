@@ -1,7 +1,7 @@
 import 'package:bus_rental_keolis/components/app/lifecycle.dart';
 import 'package:bus_rental_keolis/components/app/viewmodel.dart';
 import 'package:bus_rental_keolis/data/remote/countries/countries_client.dart';
-import 'package:bus_rental_keolis/model/Country.dart';
+import 'package:bus_rental_keolis/model/country.dart';
 import 'package:bus_rental_keolis/mutation/country_query_mutation.dart';
 import 'package:flutter/material.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
