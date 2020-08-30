@@ -19,16 +19,24 @@ class HomeView extends StatelessWidget {
   Widget _buildView(BuildContext context, HomeViewModel model) {
     final size = MediaQuery.of(context).size;
 
+    final _carHeaderContainerHomeView = Container(
+      padding: EdgeInsets.only(right: 100.0, top: 24.0),
+      alignment: Alignment.topRight,
+      child: Image(
+        image: AssetImage("assets/img/img_header_car.png"),
+      ),
+    );
+
     final _rentalContainerHomeView = Container(
-      height: 350,
-      width: 400,
+      height: 450,
+      width: 500,
       decoration: BoxDecoration(
         color: Color(0xFFF4F4F4),
         image: DecorationImage(
             colorFilter: ColorFilter.mode(
                 Colors.white.withOpacity(0.9), BlendMode.luminosity),
             image: AssetImage("assets/img/img_rental.png"),
-            fit: BoxFit.cover),
+            fit: BoxFit.fill),
       ),
       child: Column(
         children: [
@@ -45,45 +53,82 @@ class HomeView extends StatelessWidget {
       ),
     );
 
-    final _busContainerHomeView = Container(
-      width: 1000,
-      height: 600,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-            image: AssetImage("assets/img/img_bus.png"), fit: BoxFit.cover),
-      ),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Text(
-            "Vous avez besoin d’un moyen de transport collectif :",
-            style: TextStyle(fontSize: 16, color: Colors.white),
-          ),
-          RaisedButton(
-            onPressed: () {},
-            child: Text(
-              "Louer un car",
-              style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
+    final _busContainerHomeView = Align(
+      alignment: Alignment.topRight,
+      child: Container(
+        padding: EdgeInsets.only(right: 64.0),
+        width: MediaQuery.of(context).size.width - 400,
+        height: 600,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage("assets/img/img_bus.png"), fit: BoxFit.cover),
+        ),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Container(
+              padding: EdgeInsets.only(bottom: 12.0),
+              width: 300,
+              child: Text(
+                "Vous avez besoin d’un moyen de transport collectif :",
+                style: TextStyle(fontSize: 16, color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
             ),
-          ),
-          Text(
-            "Vous avez besoin d’organiser un voyage de A à Z :",
-            style: TextStyle(fontSize: 16, color: Colors.white),
-          ),
-          RaisedButton(
-            onPressed: () {},
-            child: Text(
-              "Organiser un voyage",
-              style: TextStyle(
-                  fontSize: 16,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold),
+            Container(
+              height: 60,
+              width: 280,
+              padding: EdgeInsets.only(bottom: 12.0, right: 24.0, top: 6.0),
+              child: RaisedButton(
+                color: Colors.transparent,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(color: Colors.white),
+                ),
+                hoverColor: Color(0xFF015F7D),
+                onPressed: () {},
+                child: Text(
+                  "Louer un car",
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
             ),
-          ),
-        ],
+            Container(
+              padding: EdgeInsets.only(bottom: 12.0, top: 24.0),
+              width: 300,
+              child: Text(
+                "Vous avez besoin d'organiser un voyage de A à Z:",
+                style: TextStyle(fontSize: 16, color: Colors.white),
+                textAlign: TextAlign.center,
+              ),
+            ),
+            Container(
+              height: 60,
+              width: 280,
+              padding: EdgeInsets.only(bottom: 12.0, right: 24.0, top: 6.0),
+              child: RaisedButton(
+                color: Colors.transparent,
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(18.0),
+                  side: BorderSide(color: Colors.white),
+                ),
+                onPressed: () {},
+                hoverColor: Color(0xFF015F7D),
+                child: Text(
+                  "Organiser un voyage",
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
     );
 
@@ -189,24 +234,26 @@ class HomeView extends StatelessWidget {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Location"),
-      ),
       body: SingleChildScrollView(
         child: Stack(
           children: [
             Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [_rentalContainerHomeView, _busContainerHomeView],
-                ),
+                _carHeaderContainerHomeView,
+                _busContainerHomeView,
                 _togetherPictureContainerHomeView,
                 _bottomContainerHomeView,
               ],
             ),
             Container(
                 padding: new EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 1,
+                  top: MediaQuery.of(context).size.height * .2,
+                ),
+                child: _rentalContainerHomeView),
+            Container(
+                padding: new EdgeInsets.only(
+                  top: MediaQuery.of(context).size.height * 1.1,
                 ),
                 child: _gesturesContainerHomeView),
           ],

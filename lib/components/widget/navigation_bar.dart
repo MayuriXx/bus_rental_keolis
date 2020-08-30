@@ -53,8 +53,9 @@ class NavigationBar {
                 style: TextStyle(color: Colors.white),
               ),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(18.0),
-                  side: BorderSide(color: Colors.white)),
+                borderRadius: BorderRadius.circular(18.0),
+                side: BorderSide(color: Colors.white),
+              ),
             ),
           ),
           RaisedButton(
@@ -65,8 +66,9 @@ class NavigationBar {
               style: TextStyle(color: Colors.white),
             ),
             shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(18.0),
-                side: BorderSide(color: Colors.white)),
+              borderRadius: BorderRadius.circular(18.0),
+              side: BorderSide(color: Colors.white),
+            ),
           ),
         ],
       ),

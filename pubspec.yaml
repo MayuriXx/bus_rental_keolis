@@ -63,6 +63,7 @@ flutter:
     - assets/icon/icon_engagement.png
     - assets/icon/icon_who.png
     - assets/img/
+    - assets/img/img_header_car.png
     - assets/img/img_bus.png
     - assets/img/img_together.png
     - assets/img/img_rental.png
