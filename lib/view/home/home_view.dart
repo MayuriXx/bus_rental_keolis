@@ -132,6 +132,299 @@ class HomeView extends StatelessWidget {
       ),
     );
 
+    final _listButtonsHomeView = Container(
+      padding: EdgeInsets.only(top: 64.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                width: 200,
+                height: 250,
+                color: Color(0xFFF4F4F4),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child: Image(
+                        image: AssetImage("assets/icon/who/icon_text_who.png"),
+                      ),
+                      alignment: Alignment.topRight,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 12.0, left: 12.0),
+                      child: Image(
+                        image: AssetImage("assets/icon/icon_who.png"),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 12.0, left: 12.0),
+                      child: SizedBox(
+                        width: 200,
+                        child: Text(
+                          "Qui sommes-nous ?",
+                          style: TextStyle(
+                              color: Color(0xFF786E65),
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                width: 200,
+                height: 250,
+                color: Color(0xFFF4F4F4),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child: Image(
+                        image:
+                            AssetImage("assets/icon/who/icon_text_center.png"),
+                      ),
+                      alignment: Alignment.topRight,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 12.0, left: 12.0),
+                      child: Image(
+                        image: AssetImage("assets/icon/icon_center.png"),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 12.0, left: 12.0),
+                      child: SizedBox(
+                        width: 200,
+                        child: Text(
+                          "Votre centre le plus proche",
+                          style: TextStyle(
+                              color: Color(0xFF786E65),
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                width: 200,
+                height: 250,
+                color: Color(0xFFF4F4F4),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child: Image(
+                        image: AssetImage(
+                            "assets/icon/who/icon_text_engagement.png"),
+                      ),
+                      alignment: Alignment.topRight,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 12.0, left: 12.0),
+                      child: Image(
+                        color: Color(0xFF015F7D),
+                        image: AssetImage("assets/icon/icon_engagement.png"),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 12.0, left: 12.0),
+                      child: SizedBox(
+                        width: 200,
+                        child: Text(
+                          "Tous nos engagements",
+                          style: TextStyle(
+                              color: Color(0xFF015F7D),
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: InkWell(
+              onTap: () {},
+              child: Container(
+                width: 200,
+                height: 250,
+                color: Color(0xFFF4F4F4),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Container(
+                      child: Image(
+                        image:
+                            AssetImage("assets/icon/who/icon_text_benefit.png"),
+                      ),
+                      alignment: Alignment.topRight,
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(bottom: 12.0, left: 12.0),
+                      child: Image(
+                        image: AssetImage("assets/icon/icon_benefit.png"),
+                        color: Color(0xFF015F7D),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.only(top: 12.0, left: 12.0),
+                      child: SizedBox(
+                        width: 200,
+                        child: Text(
+                          "Toutes nos prestations",
+                          style: TextStyle(
+                              color: Color(0xFF015F7D),
+                              fontSize: 22,
+                              fontWeight: FontWeight.bold),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          InkWell(
+            onTap: () {},
+            child: Container(
+              width: 200,
+              height: 250,
+              color: Color(0xFFF4F4F4),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    child: Image(
+                      image: AssetImage("assets/icon/who/icon_text_cars.png"),
+                    ),
+                    alignment: Alignment.topRight,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(bottom: 12.0, left: 12.0),
+                    child: Image(
+                      image: AssetImage("assets/icon/icon_cars.png"),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 12.0, left: 12.0),
+                    child: SizedBox(
+                      width: 100,
+                      child: Text(
+                        "Tous nos véhicules",
+                        style: TextStyle(
+                            color: Color(0xFF786E65),
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+
+    final _listDescriptionHomeView = Container(
+      padding: EdgeInsets.only(top: 48.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: Container(
+              width: 350,
+              height: 350,
+              padding: EdgeInsets.only(right: 24.0),
+              alignment: Alignment.center,
+              color: Colors.white,
+              child: Container(
+                alignment: Alignment.center,
+                width: 200,
+                child: Text(
+                  "« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh »",
+                  style: TextStyle(
+                      color: Color(0xFF015F7D),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 28),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: Container(
+              width: 350,
+              height: 350,
+              padding: EdgeInsets.only(right: 24.0),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/img/img_description.png"),
+                    fit: BoxFit.cover),
+              ),
+              child: Container(
+                alignment: Alignment.center,
+                width: 200,
+                child: Text(
+                  "« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh »",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 28),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            width: 350,
+            height: 350,
+            alignment: Alignment.center,
+            color: Color(0xFF015F7D),
+            child: Container(
+              alignment: Alignment.center,
+              width: 200,
+              child: Text(
+                "« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh »",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+
     final _gesturesContainerHomeView = Container(
       padding: EdgeInsets.only(right: 64.0),
       child: Row(
@@ -228,7 +521,7 @@ class HomeView extends StatelessWidget {
       padding: EdgeInsets.only(top: 48.0),
       child: Container(
         width: size.width,
-        height: 300,
+        height: 200,
         color: Color(0xFF786E65),
       ),
     );
@@ -242,6 +535,8 @@ class HomeView extends StatelessWidget {
               children: [
                 _carHeaderContainerHomeView,
                 _busContainerHomeView,
+                _listButtonsHomeView,
+                _listDescriptionHomeView,
                 _togetherPictureContainerHomeView,
                 _bottomContainerHomeView,
               ],
@@ -253,7 +548,7 @@ class HomeView extends StatelessWidget {
                 child: _rentalContainerHomeView),
             Container(
                 padding: new EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 1.1,
+                  top: MediaQuery.of(context).size.height * 1.85,
                 ),
                 child: _gesturesContainerHomeView),
           ],
