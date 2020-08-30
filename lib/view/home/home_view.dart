@@ -353,6 +353,78 @@ class HomeView extends StatelessWidget {
       ),
     );
 
+    final _listDescriptionHomeView = Container(
+      padding: EdgeInsets.only(top: 48.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: Container(
+              width: 350,
+              height: 350,
+              padding: EdgeInsets.only(right: 24.0),
+              alignment: Alignment.center,
+              color: Colors.white,
+              child: Container(
+                alignment: Alignment.center,
+                width: 200,
+                child: Text(
+                  "« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh »",
+                  style: TextStyle(
+                      color: Color(0xFF015F7D),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 28),
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(right: 24.0),
+            child: Container(
+              width: 350,
+              height: 350,
+              padding: EdgeInsets.only(right: 24.0),
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                    image: AssetImage("assets/img/img_description.png"),
+                    fit: BoxFit.cover),
+              ),
+              child: Container(
+                alignment: Alignment.center,
+                width: 200,
+                child: Text(
+                  "« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh »",
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 28),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            width: 350,
+            height: 350,
+            alignment: Alignment.center,
+            color: Color(0xFF015F7D),
+            child: Container(
+              alignment: Alignment.center,
+              width: 200,
+              child: Text(
+                "« Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh »",
+                style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 28),
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
+
     final _gesturesContainerHomeView = Container(
       padding: EdgeInsets.only(right: 64.0),
       child: Row(
@@ -449,7 +521,7 @@ class HomeView extends StatelessWidget {
       padding: EdgeInsets.only(top: 48.0),
       child: Container(
         width: size.width,
-        height: 300,
+        height: 200,
         color: Color(0xFF786E65),
       ),
     );
@@ -464,6 +536,7 @@ class HomeView extends StatelessWidget {
                 _carHeaderContainerHomeView,
                 _busContainerHomeView,
                 _listButtonsHomeView,
+                _listDescriptionHomeView,
                 _togetherPictureContainerHomeView,
                 _bottomContainerHomeView,
               ],
@@ -475,7 +548,7 @@ class HomeView extends StatelessWidget {
                 child: _rentalContainerHomeView),
             Container(
                 padding: new EdgeInsets.only(
-                  top: MediaQuery.of(context).size.height * 1.45,
+                  top: MediaQuery.of(context).size.height * 1.85,
                 ),
                 child: _gesturesContainerHomeView),
           ],
