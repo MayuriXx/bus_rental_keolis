@@ -62,7 +62,10 @@ class HomeView extends StatelessWidget {
               width: 300,
               child: Text(
                 "Maecenas varius tortor nibh, sit amet tempor nibh finibus.",
-                style: TextStyle(color: KeolisColors.theme[200], fontSize: 24, fontFamily: "ProximaNova"),
+                style: TextStyle(
+                    color: KeolisColors.theme[200],
+                    fontSize: 24,
+                    fontFamily: "ProximaNova"),
               ),
             ),
           ],
@@ -88,7 +91,10 @@ class HomeView extends StatelessWidget {
                 width: 300,
                 child: Text(
                   "Vous avez besoin d’un moyen de transport collectif :",
-                  style: TextStyle(fontSize: 16, color: Colors.white,fontFamily: "ProximaNova"),
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontFamily: "ProximaNova"),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -109,7 +115,8 @@ class HomeView extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,fontFamily: "ProximaNova"),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "ProximaNova"),
                   ),
                 ),
               ),
@@ -118,7 +125,10 @@ class HomeView extends StatelessWidget {
                 width: 300,
                 child: Text(
                   "Vous avez besoin d'organiser un voyage de A à Z:",
-                  style: TextStyle(fontSize: 16, color: Colors.white,fontFamily: "ProximaNova"),
+                  style: TextStyle(
+                      fontSize: 16,
+                      color: Colors.white,
+                      fontFamily: "ProximaNova"),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -139,7 +149,8 @@ class HomeView extends StatelessWidget {
                     style: TextStyle(
                         fontSize: 16,
                         color: Colors.white,
-                        fontWeight: FontWeight.bold,fontFamily: "ProximaNova"),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "ProximaNova"),
                   ),
                 ),
               ),
@@ -187,7 +198,8 @@ class HomeView extends StatelessWidget {
                             style: TextStyle(
                                 color: KeolisColors.theme[200],
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold, fontFamily: "Museo"),
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Museo"),
                           ),
                         ),
                       ),
@@ -230,7 +242,8 @@ class HomeView extends StatelessWidget {
                             style: TextStyle(
                                 color: KeolisColors.theme[200],
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold, fontFamily: "Museo"),
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Museo"),
                           ),
                         ),
                       ),
@@ -274,7 +287,8 @@ class HomeView extends StatelessWidget {
                             style: TextStyle(
                                 color: KeolisColors.theme[300],
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold, fontFamily: "Museo"),
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Museo"),
                           ),
                         ),
                       ),
@@ -318,7 +332,8 @@ class HomeView extends StatelessWidget {
                             style: TextStyle(
                                 color: KeolisColors.theme[300],
                                 fontSize: 18,
-                                fontWeight: FontWeight.bold, fontFamily: "Museo"),
+                                fontWeight: FontWeight.bold,
+                                fontFamily: "Museo"),
                           ),
                         ),
                       ),
@@ -358,7 +373,8 @@ class HomeView extends StatelessWidget {
                           style: TextStyle(
                               color: KeolisColors.theme[200],
                               fontSize: 18,
-                              fontWeight: FontWeight.bold, fontFamily: "Museo"),
+                              fontWeight: FontWeight.bold,
+                              fontFamily: "Museo"),
                         ),
                       ),
                     ),
@@ -391,7 +407,8 @@ class HomeView extends StatelessWidget {
                     style: TextStyle(
                         color: KeolisColors.theme[300],
                         fontWeight: FontWeight.bold,
-                        fontSize: 28, fontFamily: "Museo"),
+                        fontSize: 28,
+                        fontFamily: "Museo"),
                   ),
                 ),
               ),
@@ -416,7 +433,8 @@ class HomeView extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white,
                         fontWeight: FontWeight.bold,
-                        fontSize: 28, fontFamily: "Museo"),
+                        fontSize: 28,
+                        fontFamily: "Museo"),
                   ),
                 ),
               ),
@@ -434,7 +452,8 @@ class HomeView extends StatelessWidget {
                   style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
-                      fontSize: 28, fontFamily: "Museo"),
+                      fontSize: 28,
+                      fontFamily: "Museo"),
                 ),
               ),
             ),
@@ -515,7 +534,8 @@ class HomeView extends StatelessWidget {
                     style: TextStyle(
                         color: Colors.white,
                         fontSize: 44,
-                        fontWeight: FontWeight.bold, fontFamily: "Museo"),
+                        fontWeight: FontWeight.bold,
+                        fontFamily: "Museo"),
                     textAlign: TextAlign.left,
                   ),
                 ),
@@ -524,7 +544,10 @@ class HomeView extends StatelessWidget {
                   width: 300,
                   child: Text(
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh",
-                    style: TextStyle(color: Colors.white, fontSize: 20,  fontFamily: "ProximaNova"),
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 20,
+                        fontFamily: "ProximaNova"),
                     textAlign: TextAlign.left,
                   ),
                 ),
@@ -544,31 +567,39 @@ class HomeView extends StatelessWidget {
       );
 
       return Scaffold(
-        body: SingleChildScrollView(
-          child: Stack(
-            children: [
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _carHeaderContainerHomeView,
-                  _busContainerHomeView,
-                  _listButtonsHomeView,
-                  _listDescriptionHomeView,
-                  _togetherPictureContainerHomeView,
-                  _bottomContainerHomeView,
-                ],
-              ),
-              Container(
-                  padding: new EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height * .2,
-                  ),
-                  child: _rentalContainerHomeView),
-              Container(
-                  padding: new EdgeInsets.only(
-                    top: MediaQuery.of(context).size.height * 1.85,
-                  ),
-                  child: _gesturesContainerHomeView),
-            ],
+        body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/img/img_background.png"),
+              fit: BoxFit.cover,
+            ),
+          ),
+          child: SingleChildScrollView(
+            child: Stack(
+              children: [
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    _carHeaderContainerHomeView,
+                    _busContainerHomeView,
+                    _listButtonsHomeView,
+                    _listDescriptionHomeView,
+                    _togetherPictureContainerHomeView,
+                    _bottomContainerHomeView,
+                  ],
+                ),
+                Container(
+                    padding: new EdgeInsets.only(
+                      top: MediaQuery.of(context).size.height * .2,
+                    ),
+                    child: _rentalContainerHomeView),
+                Container(
+                    padding: new EdgeInsets.only(
+                      top: MediaQuery.of(context).size.height * 1.85,
+                    ),
+                    child: _gesturesContainerHomeView),
+              ],
+            ),
           ),
         ),
         bottomNavigationBar: NavigationBar().bottomNavigationBar(context),
