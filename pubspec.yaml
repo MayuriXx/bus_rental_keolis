@@ -57,6 +57,15 @@ flutter:
 
   uses-material-design: true
 
+  fonts:
+    - family: Museo
+      fonts:
+        - asset: assets/fonts/museo_900.otf
+    - family: ProximaNova
+      fonts:
+        - asset: assets/fonts/proxima_nova_bold.otf
+        - asset: assets/fonts/proxima_nova_regular.otf
+
   assets:
     - assets/icon/
     - assets/icon/icon_cleaner.png
