@@ -1,10 +1,11 @@
+import 'package:bus_rental_keolis/theme/keolis_theme.dart';
 import 'package:flutter/material.dart';
 
 class NavigationBar {
   Widget bottomNavigationBar(BuildContext context) {
     final _contactRowNavigationBar = Container(
       padding: EdgeInsets.only(bottom: 12.0, top: 12.0),
-      color: Color(0xFF015F7D),
+      color: KeolisColors.theme[300],
       child: Row(
         children: [
           Padding(
@@ -46,7 +47,7 @@ class NavigationBar {
           Padding(
             padding: EdgeInsets.only(right: 12.0),
             child: RaisedButton(
-              color: Color(0xFF015F7D),
+              color: KeolisColors.theme[300],
               onPressed: () {},
               child: Text(
                 "Louer un car",
@@ -59,7 +60,7 @@ class NavigationBar {
             ),
           ),
           RaisedButton(
-            color: Color(0xFF015F7D),
+            color: KeolisColors.theme[300],
             onPressed: () {},
             child: Text(
               "Organiser un voyage",
@@ -78,7 +79,7 @@ class NavigationBar {
       height: 60,
       alignment: Alignment.bottomRight,
       decoration: BoxDecoration(
-        color: Color(0xFF015F7D),
+        color: KeolisColors.theme[300],
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.end,
